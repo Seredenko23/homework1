@@ -1,0 +1,127 @@
+@import '../fonts/fonts';
+
+$white: #f8f6f6;
+$darkgrey: #696969;
+$blue: #171f23;
+
+
+body {
+	margin: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font:100% bigNoodleTitling, sans-serif;
+	margin: 0;
+}
+
+header, .header_wrapper {
+	height: 142px;
+}
+
+header ,section, footer {
+	width: 100%;
+}
+
+header {
+	background-color: $white;
+	.header_wrapper {
+	margin: 0 182px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+		.title {
+		display: flex;
+		flex-direction: row;
+		vertical-align: center;
+			h2 {
+				margin: 0;
+				font-size: 40px;
+				letter-spacing: 4px;
+				color: $darkgrey;
+				margin-left: 30px;
+			}
+		}
+		i {
+			font-size: 35px;
+		}
+	}
+}
+
+.beCreative, .wrapper, .scroll {
+	height: 708px;
+	display: flex;
+	flex-direction: column;
+}
+
+.beCreative {
+	background-color: #353535;
+	color: #d6d5d5;
+		.pe-7s-mouse {
+			font-size: 36pt;
+			margin-bottom: 20px;
+		}
+	 .wrapper, .scroll {
+	 	align-items: center;
+		justify-content: flex-end;
+	 }
+	 .scroll {
+	 	margin-bottom: 46px;
+		font-size: 12pt;
+	 }
+	 	h1, h2 {
+	 		letter-spacing: 16px;
+	 	}
+	 	h1 {
+	 		font-size: 72pt;
+	 	}
+	 	h2 {
+	 		font-size: 36px;
+	 	}
+}
+
+.aboutUs {
+	height: 568px;
+	.wrapper {
+		height: 568px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+			h1 {
+			font-size: 48pt;
+			border-bottom: 3px solid red;
+		}
+			.description {
+			font-size: 14pt;
+			margin-bottom: 62px;
+		}
+	}
+	.card_wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		.sign {
+			color: red;
+			font-size:50pt;
+		}
+		.card {
+			margin: 0 10px;
+			width: 320px;
+			height: 195px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: #ebebeb;
+			color: #707070;
+			h3 {
+				font-size: 18pt;
+			}
+				p {
+				text-align: center;
+				margin: 0;
+			}
+		}
+	}
+}

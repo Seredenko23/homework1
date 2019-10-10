@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "bigNoodleTitling";
+  src: url("../fonts/bigNoodleTitling/big_noodle_titling.ttf");
+}
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: 100% bigNoodleTitling, sans-serif;
+  margin: 0;
+}
+
+header, .header_wrapper {
+  height: 142px;
+}
+
+header, section, footer {
+  width: 100%;
+}
+
+header {
+  background-color: #f8f6f6;
+}
+header .header_wrapper {
+  margin: 0 182px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_wrapper .title {
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+}
+header .header_wrapper .title h2 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 4px;
+  color: #696969;
+  margin-left: 30px;
+}
+header .header_wrapper i {
+  font-size: 35px;
+}
+
+.beCreative, .wrapper, .scroll {
+  height: 708px;
+  display: flex;
+  flex-direction: column;
+}
+
+.beCreative {
+  background-color: #353535;
+  color: #d6d5d5;
+}
+.beCreative .pe-7s-mouse {
+  font-size: 36pt;
+  margin-bottom: 20px;
+}
+.beCreative .wrapper, .beCreative .scroll {
+  align-items: center;
+  justify-content: flex-end;
+}
+.beCreative .scroll {
+  margin-bottom: 46px;
+  font-size: 12pt;
+}
+.beCreative h1, .beCreative h2 {
+  letter-spacing: 16px;
+}
+.beCreative h1 {
+  font-size: 72pt;
+}
+.beCreative h2 {
+  font-size: 36px;
+}
+
+.aboutUs {
+  height: 568px;
+}
+.aboutUs .wrapper {
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutUs .wrapper h1 {
+  font-size: 48pt;
+  border-bottom: 3px solid red;
+}
+.aboutUs .wrapper .description {
+  font-size: 14pt;
+  margin-bottom: 62px;
+}
+.aboutUs .card_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.aboutUs .card_wrapper .sign {
+  color: red;
+  font-size: 50pt;
+}
+.aboutUs .card_wrapper .card {
+  margin: 0 10px;
+  width: 320px;
+  height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebeb;
+  color: #707070;
+}
+.aboutUs .card_wrapper .card h3 {
+  font-size: 18pt;
+}
+.aboutUs .card_wrapper .card p {
+  text-align: center;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

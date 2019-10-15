@@ -1,18 +1,17 @@
+var menu = $('#menu')
+var body = $('body')
+
 $('#burger').click(function () {
-  $('#menu').toggleClass('shown')
-  check()
+  menu.toggleClass('shown')
+  body.toggleClass('frezze')
 })
 
-$('#menu').click(function (event) {
-  if (event.target.tagName === 'A' || event.target.classList.contains('background')) {
-    $('#menu').removeClass('shown')
-    check()
+menu.click(function (event) {
+  if (event.target.classList.contains('link_js') || event.target.id.trim() == 'bg') {
+    menu.removeClass('shown')
+    body.removeClass('frezze')
   }
 })
-
-function check () {
-  $('#menu').hasClass('shown') ? $('body').css('overflow', 'hidden') : $('body').css('overflow', 'auto')
-}
 
 $('.owl-carousel').owlCarousel({
   loop: true,
@@ -32,7 +31,7 @@ $('.owl-carousel').owlCarousel({
 })
 
 $('#project').click(function (event) {
-  if (event.target.tagName === 'LI') {
+  if (event.target.classList.contains('item_js')) {
     $('#project li').each(function (index, element) {
       element.classList.remove('selected')
     })

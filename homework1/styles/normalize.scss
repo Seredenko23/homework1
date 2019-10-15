@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+
+p {
+	font: $thin-font-family;
+	font-size: 14pt;
+	margin: 0 20px;
+	text-align: center;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		transition: 0.2s ease-out;
+		background-color: #d65d38 !important;
+	}
+}
+
+input {
+	border:none;
+	border-bottom: 1px solid $main-color;
+	font-size:14pt;
+	&:focus {
+		outline: none;
+		border-bottom:1px solid $second-accent-color;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: $headers-fonts, sans-serif;
+	margin: 0;
+}
+h1 {
+	font-size: 64pt;
+}
+
+h2 {
+	font-size: 44pt;
+}
+
+h3 {
+	font-size: 36pt;
+}
+
+h4 {
+	font-size: 27pt;
+}
+
+h5 {
+	font-size: 18pt;
+}
+
+header ,section, footer {
+	width: 100%;
+}
